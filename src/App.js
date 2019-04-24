@@ -1,12 +1,15 @@
 import React from 'react';
 import Home from './main/home/Home'
+import Toolbar from './components/toolbar/Toolbar'
+import Card from './components/card/Card'
 
 function App() {
   // render() {
     return (
       <div>
-        <h1> App </h1>
-        <Home/>
+        <Toolbar/>
+          <Card/>
+        {/*<Home/>*/}
       </div>
       // <div className="App">
       //   <header className="App-header">
