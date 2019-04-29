@@ -1,10 +1,10 @@
 import React from 'react';
 import './Card.css'
 
-function Card() {
+function Card(props) {
     return (
         <div className="card">
-            <div> Olha que teste magnifico </div>
+            {{props.children}}
         </div>
     );
 }
