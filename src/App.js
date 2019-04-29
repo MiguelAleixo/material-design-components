@@ -4,7 +4,7 @@ import Toolbar from './components/toolbar/Toolbar';
 
 function App() {
   return (
-    <div>
+    <div className="app">
       <Toolbar />
       <Home />
     </div>
