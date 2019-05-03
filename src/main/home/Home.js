@@ -2,16 +2,15 @@ import React from 'react';
 import Card from '../../components/card/Card';
 import Input from '../../components/input/Input';
 import CardTitle from "../../components/cardTitle/CardTitle";
+import Button from '../../components/button/Button';
 
 function Home() {
     return (
         <div>
             <Card>
-                <CardTitle/>
-                <div style={{display: 'flex'}}>
+                <CardTitle title={'Cadastro'} icon={'info'}/>
                     <Input/>
-                    <Input/>
-                </div>
+                    <Button/>
             </Card>
         </div>
     );

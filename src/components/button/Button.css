@@ -1,0 +1,16 @@
+.button{
+    height: 36px;
+    font-weight: 500;
+    border-radius: 4px;
+    border: none;
+    min-width: 92px;
+    font-family: Roboto;
+    color: #FFF;
+    font-size: 16px;
+    background-color: #4285f4;
+    outline: none;
+}
+
+.button-container{
+    margin: 16px 16px 16px auto;
+}

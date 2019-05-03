@@ -2,14 +2,14 @@ import React from 'react';
 import './CardTitle.css'
 
 class CardTitle extends React.Component {
-    constructor(props) {
-        super(props)
-    }
-
     render() {
         return (
-            <div>
-                <h1 className="title"> Título </h1>
+            <div className="titleContainer">
+            <i className="material-icons icon">arrow_back</i>
+                <div className="title"> {this.props.title} </div>
+                {this.props.icon && (
+                   <i className="material-icons icon-right">{ this.props.icon }</i>
+                )}
             </div>
         );
     }
