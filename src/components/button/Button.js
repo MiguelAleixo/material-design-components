@@ -6,7 +6,7 @@ class Button extends React.Component {
         return (
             <div className="button-container">
                 <button className="button">
-                    Button
+                    {this.props.title}
                 </button>
             </div>
         );

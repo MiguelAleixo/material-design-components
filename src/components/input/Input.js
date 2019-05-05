@@ -6,7 +6,7 @@ class Input extends React.Component {
         return (
             <div className="inputContainer">
                 <input className="input" required type="text"/>
-                <label className="labelInput">Input</label>
+                <label className="labelInput" htmlFor="input">Input</label>
             </div>
         );
     }
