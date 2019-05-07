@@ -8,27 +8,43 @@ import FloatButton from '../../components/floatButton/FloatButton';
 import { Link } from 'react-router-dom';
 import DataTable from "../../components/dataTable/DataTable";
 
-function Home() {
+class Home extends React.Component {
+    constructor(props) {
+        super(props);
 
-
-    return (
-        <div>
-            <Card size={'600px'}>
-                <CardTitle title={'Pesquisar'} icon={'search'}/>
-                {/*<CardContent>*/}
-                {/*    <div>*/}
-                {/*        <Input/>*/}
-                {/*        <Input/>*/}
-                {/*    </div>*/}
-                {/*    <Button title={'Continuar'}/>*/}
-                {/*    <Link to="/nova">ir para nova</Link>*/}
-                {/*</CardContent>*/}
-                <DataTable/>
-            </Card>
-            <FloatButton cardSize={'600px'}/>
+        this.state = {
+            pessoas: [
+                {
+                    nome: 'Miguel',
+                    idade: 48,
+                    peso: 43.5
+                },
+                {
+                    nome: 'Joana',
+                    idade: 41,
+                    peso: 80
+                },
+                {
+                    nome: 'Cleitim',
+                    idade: 20,
+                    peso: 79.5
+                }
+            ],
+            titlePessoas: ['Nome', 'Idade', 'Peso']
+        }
+    }
+    render() {
+        return (
+            <div>
+                <Card size={'600px'}>
+                    <CardTitle title={'Pesquisar'} icon={'search'} />
+                    <DataTable data={this.state.pessoas} titles={this.state.titlePessoas} />
+                </Card>
+                <FloatButton cardSize={'600px'} />
                 <Link to="/nova">ir para nova</Link>
-        </div>
-    );
+            </div>
+        );
+    }
 }
 
 export default Home;

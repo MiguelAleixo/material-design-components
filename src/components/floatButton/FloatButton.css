@@ -34,3 +34,7 @@
 .float-button:active{
     background-color: #303f9f;
 }
+
+.icon{
+    user-select: none;
+}

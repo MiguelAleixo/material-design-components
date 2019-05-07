@@ -10,14 +10,19 @@ function Nova() {
     return (
         <div>
             <Card size={'600px'}>
-                <CardTitle title={'Nova tela'} icon={'search'}/>
+                <CardTitle title={'Nova tela'} icon={'search'} />
                 <CardContent>
-                    <Input/>
-                    <Input/>
+                    <Input />
+                    <Input />
                     <Link to="/">Home</Link>
+                    <div>
+                        <Input />
+                        <Input />
+                    </div>
+                    <Link to="/nova">ir para nova</Link>
                 </CardContent>
             </Card>
-            <FloatButton cardSize={'600px'}/>
+            <FloatButton cardSize={'600px'} />
         </div>
     );
 }
