@@ -1,0 +1,36 @@
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table tr:not(:first-child):hover {
+    background-color: rgba(0,0,0,0.05);
+}
+
+
+th{
+    font-size: 12px;
+    font-weight: 500;
+    height: 56px;
+    text-align: left;
+    cursor: default;
+    user-select: none;
+    white-space: nowrap;
+    color: rgba(0, 0, 0, 0.5);
+    padding: 0 12px;
+}
+
+td{
+    height: 48px;
+    font-size: 14px;
+    text-align: left;
+    cursor: default;
+    user-select: none;
+    white-space: nowrap;
+    color: #212121;
+    padding: 0 12px;
+}
+
+tr{
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
