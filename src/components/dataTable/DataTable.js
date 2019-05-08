@@ -32,8 +32,8 @@ class DataTable extends React.Component {
                       <td colSpan={this.props.titles.length}>
                           <div className="footer-container">
                               <span> 1-10 de 10 </span>
-                              <i className="material-icons"> keyboard_arrow_left </i>
-                              <i className="material-icons"> keyboard_arrow_right </i>
+                              <i className="material-icons icon-paginate"> keyboard_arrow_left </i>
+                              <i className="material-icons icon-paginate"> keyboard_arrow_right </i>
                           </div>
                       </td>
                   </tr>

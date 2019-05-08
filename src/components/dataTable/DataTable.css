@@ -7,6 +7,18 @@ table tr:not(:first-child):hover {
     background-color: rgba(0,0,0,0.05);
 }
 
+table th:last-child,
+table td:last-child{
+    text-align: right;
+    padding-right: 16px;
+}
+
+table th:first-child,
+table td:first-child{
+    padding-left: 16px;
+}
+
+
 
 th{
     font-size: 12px;
@@ -44,5 +56,10 @@ tr{
 }
 
 .footer-container span{
+    font-size: 12px;
+    margin-right: 8px;
+}
 
+.icon-paginate{
+    /*margin: 0 8px;*/
 }
