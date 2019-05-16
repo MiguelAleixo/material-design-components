@@ -30,7 +30,7 @@ class Home extends React.Component {
                     peso: 79.5
                 }
             ],
-            titlePessoas: ['Nome', 'Idade', 'Peso']
+            titlePessoas: ['Nome do fiadaputa', 'Idade', 'Peso']
         }
     }
     render() {

@@ -61,5 +61,5 @@ tr{
 }
 
 .icon-paginate{
-    /*margin: 0 8px;*/
+    cursor: pointer;
 }
