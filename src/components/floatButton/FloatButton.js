@@ -6,7 +6,7 @@ class FloatButton extends React.Component {
         return (
             <div className="float-button-container" style={{  right: `calc(50% - (${this.props.cardSize} / 2) - 79px)`}}>
                 <button className="float-button">
-                <i className="material-icons icon"> add </i>
+                <i className="material-icons icon"> { this.props.icon } </i>
                 </button>
             </div>
         );

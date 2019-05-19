@@ -7,6 +7,7 @@ import Button from '../../components/button/Button';
 import FloatButton from '../../components/floatButton/FloatButton';
 import { Link } from 'react-router-dom';
 import DataTable from "../../components/dataTable/DataTable";
+import Select from '../../components/select/Select';
 
 class Home extends React.Component {
     constructor(props) {
@@ -38,7 +39,8 @@ class Home extends React.Component {
             <div>
                 <Card size={'600px'}>
                     <CardTitle title={'Pesquisar'} icon={'search'} />
-                    <DataTable data={this.state.pessoas} titles={this.state.titlePessoas} />
+                    {/* <DataTable data={this.state.pessoas} titles={this.state.titlePessoas} /> */}
+                    <Select/>
                 </Card>
                 <FloatButton cardSize={'600px'} />
                 <Link to="/nova">ir para nova</Link>

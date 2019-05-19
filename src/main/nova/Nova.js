@@ -4,25 +4,41 @@ import Input from '../../components/input/Input';
 import CardContent from '../../components/cardContent/CardContent';
 import CardTitle from "../../components/cardTitle/CardTitle";
 import FloatButton from '../../components/floatButton/FloatButton';
+import Flex from '../../components/flex/Flex';
 import { Link } from 'react-router-dom'
 
 function Nova() {
     return (
         <div>
             <Card size={'600px'}>
-                <CardTitle title={'Nova tela'} icon={'search'} />
+                <CardTitle title={'Cadastro de pessoa'} icon={'search'} />
                 <CardContent>
-                    <Input />
-                    <Input />
-                    <Link to="/">Home</Link>
-                    <div>
-                        <Input />
-                        <Input />
-                    </div>
-                    <Link to="/nova">ir para nova</Link>
+                    <Input label={'Nome'} />
+                    <Flex>
+                        <Input label={'Sexo'} />
+                        <Input label={'Data de nascimento'} margin />
+                    </Flex>
+                    <Flex>
+                        <Input label={'Telefone'} />
+                        <Input label={'E-mail'} margin />
+                    </Flex>
+                    <Flex>
+                        <Input label={'RG'} />
+                        <Input label={'CPF'} margin />
+                    </Flex>
+                    <Flex>
+                        <Input label={'Estado'} />
+                        <Input label={'Cidade'} margin />
+                    </Flex>
+                    <Flex>
+                        <Input label={'Bairro'} />
+                        <Input label={'Logradouro'} margin />
+                        <Input label={'Número'} margin />
+                    </Flex>
+                    <Input label={'Complemento'} />
                 </CardContent>
             </Card>
-            <FloatButton cardSize={'600px'} />
+            <FloatButton icon={'done'} cardSize={'600px'} />
         </div>
     );
 }
