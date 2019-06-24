@@ -5,8 +5,8 @@ class Button extends React.Component {
     render() {
         return (
             <div className="button-container">
-                <button className="button">
-                    {this.props.title}
+                <button className="button" style={{ backgroundColor: this.props.backgroundColor }}>
+                    MC
                 </button>
             </div>
         );
